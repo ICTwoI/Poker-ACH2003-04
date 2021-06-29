@@ -4,8 +4,10 @@ public class Player {
     private int handIndex;
 
     public Player(String strCards){
+        
         this.cards = montaCartas(strCards);
         this.handIndex = 0;
+        
     }
 
     public Card[] getCards(){
@@ -19,10 +21,13 @@ public class Player {
     }
 
     public void setCards(String strCards){
+        
       this.cards = montaCartas(strCards);
+        
     }
 
     public Card[] montaCartas(){
+        
         String[] arrStrCards = strCards.split(" ");
         Card[] auxCards = new Card[arrStrCards.length];
 
