@@ -27,11 +27,13 @@ public class Card {
 
 	// Setter para a variável rank
 	public void setRank(int rank) {
+		
 		this.rank = rank;
 	}
 
 	// Setter para a variável suit
 	public void setSuit(char suit) {
+		
 		this.suit = suit;
 	}
 
