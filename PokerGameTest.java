@@ -28,6 +28,7 @@ public class PokerGameTest {
 
         test1Result = "14o 13o 12o 11o 10o RoyalFlush";
         test2Result = "14o 13c 12o 11o 9o ";
+        
     }
 
     @Rule
@@ -37,11 +38,13 @@ public class PokerGameTest {
     public void test1() {
 
         assertEquals(test1Result, table.individualTest(test1));
+        
     }
 
     @Test
     public void test2() {
 
         assertEquals(test2Result, table.individualTest(test2));
+        
     }
 }
